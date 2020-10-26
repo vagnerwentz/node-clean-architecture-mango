@@ -1,0 +1,7 @@
+{
+  "name": "curso-node-typescript-clean-solid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vagner Wentz <wentz.vagner@gmail.com>",
+  "license": "MIT"
+}
