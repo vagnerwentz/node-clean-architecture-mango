@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", /* Where we want to generate the code as JavaScript */
+    "module": "commonjs", /* Use import/export and when we want to generate, will change to require, module.exports*/
+    "target": "es2019", 
+    "esModuleInterop": true,
+    "allowJs": true
+  }
+}
