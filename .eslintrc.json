@@ -1,36 +1,41 @@
 {
-"env": {
-  "es2020": true,
-  "node": true
-},
-"extends": [
-  "airbnb-base",
-  "plugin:@typescript-eslint/recommended",
-  "prettier/@typescript-eslint",
-  "plugin:prettier/recommended"
-],
-"parser": "@typescript-eslint/parser",
-"parserOptions": {
-  "ecmaVersion": 2018,
-  "sourceType": "module"
-},
-"plugins": [
-  "@typescript-eslint",
-  "prettier"
-],
-"rules": {
-  "prettier/prettier": "error",
+  "env": {
+    "es2020": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "max-classes-per-file": "off",
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "no-restricted-syntax": "off",
+    "consistent-return": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
       {
-      "ts": "never"
+        "ts": "never"
       }
     ]
   },
   "settings": {
-  "import/resolver": {
+    "import/resolver": {
       "typescript": {}
     }
-  } 
+  }
 }
