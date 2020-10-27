@@ -96,6 +96,25 @@ describe('SignUp Controller', () => {
     );
   });
 
+  it('Should return 400 if password confirmation fails', () => {
+    const { sut } = makeSutFactory();
+
+    const httpRequest = {
+      body: {
+        name: 'any-name',
+        email: 'any-email@mail.com',
+        password: 'any-password',
+        passwordConfirmation: 'invalid-password',
+      },
+    };
+
+    const httpResponse = sut.handle(httpRequest);
+    expect(httpResponse.statusCode).toBe(400);
+    expect(httpResponse.body).toEqual(
+      new InvalidParamError('passwordConfirmation'),
+    );
+  });
+
   it('Should return 400 if an invalid email is provided', () => {
     const { sut, emailValidatorStub } = makeSutFactory();
 
