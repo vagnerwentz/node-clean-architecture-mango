@@ -19,6 +19,7 @@
     "prettier"
   ],
   "rules": {
+    "import/no-extraneous-dependencies": "off",
     "prettier/prettier": "error",
     "max-classes-per-file": "off",
     "import/prefer-default-export": "off",
